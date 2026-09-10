@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aspose.Total MCP Server — Python via .NET MCP Server for Aspose</title>
+<meta name="description" content="MCP (Model Context Protocol) servers for [Aspose](https://www.aspose.com/) document processing products. Connect your AI assistant to Aspose tools for working with Word documents, PDFs, spreadsheets, presentations, email, images, and more — all without leaving your AI client. Each Aspose product runs as its own isolated MCP server.">
+<link rel="canonical" href="https://aspose-total.github.io/aspose-total-for-python-via-dotnet-mcp-server/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aspose.Total MCP Server — Python via .NET MCP Server">
+<meta property="og:description" content="MCP (Model Context Protocol) servers for [Aspose](https://www.aspose.com/) document processing products. Connect your AI assistant to Aspose tools for working with Word documents, PDFs, spreadsheets, presentations, email, images, and more — all without leaving your AI client. Each Aspose product runs as its own isolated MCP server.">
+<meta property="og:url" content="https://aspose-total.github.io/aspose-total-for-python-via-dotnet-mcp-server/">
+
+<!-- JSON-LD: SoftwareApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Aspose.Total MCP Server (Python via .NET)",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Windows, macOS, Linux",
+  "description": "MCP (Model Context Protocol) servers for [Aspose](https://www.aspose.com/) document processing products. Connect your AI assistant to Aspose tools for working with Word documents, PDFs, spreadsheets, presentations, email, images, and more \u2014 all without leaving your AI client. Each Aspose product runs as its own isolated MCP server.",
+  "url": "https://aspose-total.github.io/aspose-total-for-python-via-dotnet-mcp-server/",
+  "softwareHelp": "https://github.com/aspose-total/Aspose.Total-for-Python-via-.NET-MCP-Server"
+}
+</script>
+
+<!-- JSON-LD: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    
+    {
+      "@type": "Question",
+      "name": "Does this work with Claude Desktop?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Add one entry per product to claude_desktop_config.json, set ASPOSE_FILES_PATH and (optionally) ASPOSE_LICENSE_FILE, then fully restart Claude Desktop." }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Do I need a paid Aspose license?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No \u2014 every server runs in free evaluation mode by default. Set ASPOSE_LICENSE_FILE to your .lic file to remove evaluation limits such as watermarks." }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Can I run only some of the 19 servers?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Pass specific product names to the setup script, e.g. setup_all.sh ocr words pdf cells slides, instead of setting up all of them." }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Why does each product get its own virtual environment?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Each Aspose package is isolated in its own virtual environment so version conflicts between products are impossible and each server can be updated independently." }
+    }
+    
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="assets/base.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="./">
+      Aspose.Total MCP Server
+    </a>
+    <nav class="main-nav">
+      <a href="./#products">Products</a>
+      <a href="./#quick-start">Quick start</a>
+      <a href="./#faq">FAQ</a>
+      <a href="https://github.com/aspose-total/Aspose.Total-for-Python-via-.NET-MCP-Server" class="icon-link" aria-label="GitHub"><svg class="icon-github" viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content" tabindex="-1">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Model Context Protocol · 19 Aspose products</span>
+      <h1>Plug your AI client into <span class="accent">19 document engines.</span></h1>
+      <p style="font-size:1.05rem; max-width:52ch;">
+        One MCP server per Aspose product — Word, PDF, Excel, PowerPoint, email, images and more — running as isolated, independently-configured processes your AI assistant can call directly.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-accent" href="#quick-start">Quick start</a>
+        <a class="btn btn-outline" href="https://github.com/aspose-total/Aspose.Total-for-Python-via-.NET-MCP-Server">View source on GitHub</a>
+      </div>
+      <div class="hero-meta">
+        <span>Python via .NET</span>
+        <span>·</span>
+        <span>19 servers</span>
+        <span>·</span>
+        <span>343 tools</span>
+      </div>
+    </div>
+
+    <div class="pipeline" aria-label="How a request flows through the MCP server">
+      <div class="eyebrow" style="margin-bottom:16px;">Request flow</div>
+      <div class="pipeline-row">
+        <div class="pipeline-node">AI CLIENT<br><span style="color:var(--ink-soft)">Claude / VS Code</span></div>
+        <div class="pipeline-wire"></div>
+        <div class="pipeline-node">MCP SERVER<br><span style="color:var(--ink-soft)">isolated venv</span></div>
+        <div class="pipeline-wire"></div>
+        <div class="pipeline-node">ASPOSE ENGINE<br><span style="color:var(--ink-soft)">.words / .pdf …</span></div>
+      </div>
+      <p style="margin-top:20px; font-size:0.82rem; color:var(--code-text);">
+        Every tool call resolves a bare filename against <code>ASPOSE_FILES_PATH</code> — no full paths ever leave the AI client.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="products">
+  <div class="wrap">
+    <span class="eyebrow">Available servers</span>
+    <h2>19 products, 19 isolated MCP servers</h2>
+    <div class="section-lead">
+      <p>Each product below runs in its own virtual environment. Click through for setup, example prompts, and troubleshooting specific to that server.</p>
+    </div>
+    <div class="product-grid">
+      
+      <a class="port-card" href="aspose-words-mcp-server/">
+        <h3>Aspose.Words</h3>
+        <p>Aspose.Words for Python via .NET lets developers create, modify, convert, and render Word documents without needing Microsoft Office. It supports formats such as DOCX, DOC, RTF, HTML, Markdown, PDF, and more.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">DOCX</span><span class="fmt-badge">DOC</span><span class="fmt-badge">RTF</span><span class="fmt-badge">ODT</span><span class="fmt-badge">MD</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-pdf-mcp-server/">
+        <h3>Aspose.PDF</h3>
+        <p>Aspose.PDF for Python via .NET lets developers create, convert, and manipulate PDF files programmatically, offering features such as text extraction, document encryption, and format conversion.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">PDF</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-cells-mcp-server/">
+        <h3>Aspose.Cells</h3>
+        <p>Aspose.Cells for Python via .NET is a spreadsheet processing library that lets you create, read, modify, and convert Excel workbooks in Python. It supports formats such as XLSX, XLS, CSV, and ODS and can export to PDF, HTML, JSON, and image formats.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">XLSX</span><span class="fmt-badge">XLS</span><span class="fmt-badge">CSV</span><span class="fmt-badge">ODS</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-slides-mcp-server/">
+        <h3>Aspose.Slides</h3>
+        <p>Aspose.Slides for Python via .NET is a library that enables Python applications to create, read, modify, merge, protect, and convert PowerPoint and OpenOffice presentations without requiring Microsoft PowerPoint.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">PPTX</span><span class="fmt-badge">PPT</span><span class="fmt-badge">ODP</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-email-mcp-server/">
+        <h3>Aspose.Email</h3>
+        <p>Aspose.Email for Python via .NET enables reading, creating, converting, and extracting data from email files such as MSG, EML, PST, MBOX and MHTML.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">MSG</span><span class="fmt-badge">EML</span><span class="fmt-badge">PST</span><span class="fmt-badge">MBOX</span><span class="fmt-badge">MHTML</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-ocr-mcp-server/">
+        <h3>Aspose.OCR</h3>
+        <p>Aspose.OCR for Python via .NET provides OCR capabilities to extract text from images and scanned documents. It supports over 130 languages and common image formats such as JPG, PNG, TIFF, and PDF.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">JPG</span><span class="fmt-badge">PNG</span><span class="fmt-badge">TIFF</span><span class="fmt-badge">PDF (scan)</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-imaging-mcp-server/">
+        <h3>Aspose.Imaging</h3>
+        <p>Aspose.Imaging for Python via .NET is a library that provides advanced image processing capabilities such as loading, converting, resizing, cropping, applying filters, and adding watermarks without requiring external image editors. It supports many raster and vector formats and runs on both Windows and Linux platforms.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">PNG</span><span class="fmt-badge">JPEG</span><span class="fmt-badge">TIFF</span><span class="fmt-badge">BMP</span><span class="fmt-badge">WebP</span><span class="fmt-badge">GIF</span><span class="fmt-badge">ICO</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-barcode-mcp-server/">
+        <h3>Aspose.BarCode</h3>
+        <p>Aspose.BarCode for Python via .NET provides APIs to generate and recognize a wide range of 1D, 2D and postal barcodes directly from Python applications.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">QR</span><span class="fmt-badge">Code128</span><span class="fmt-badge">EAN</span><span class="fmt-badge">DataMatrix</span><span class="fmt-badge">PDF417</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-zip-mcp-server/">
+        <h3>Aspose.ZIP</h3>
+        <p>Aspose.ZIP for Python via .NET provides tools to create, extract, list, and manage ZIP, RAR, 7z, TAR, and GZ archives directly from a shared files folder.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">ZIP</span><span class="fmt-badge">RAR</span><span class="fmt-badge">7z</span><span class="fmt-badge">TAR</span><span class="fmt-badge">GZ</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-html-mcp-server/">
+        <h3>Aspose.HTML</h3>
+        <p>Aspose.HTML for Python via .NET enables conversion of HTML, MHTML and Markdown files to formats such as PDF, DOCX, PNG, JPEG, XPS and more, and provides utilities to extract text, links and manipulate HTML elements.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">HTML</span><span class="fmt-badge">MHTML</span><span class="fmt-badge">MD</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-psd-mcp-server/">
+        <h3>Aspose.PSD</h3>
+        <p>Aspose.PSD for Python via .NET enables loading, editing, and converting Photoshop PSD and PSB files without requiring Adobe Photoshop.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">PSD</span><span class="fmt-badge">PSB</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-svg-mcp-server/">
+        <h3>Aspose.SVG</h3>
+        <p>Aspose.SVG for Python via .NET provides server‑side tools to create, edit, query, and convert SVG files within a shared files directory.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">SVG</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-tex-mcp-server/">
+        <h3>Aspose.TeX</h3>
+        <p>Aspose.TeX for Python via .NET provides server‑side tools for working with TeX and LaTeX files, allowing conversion to PDF, image formats, XPS and SVG as well as rendering of math formulas and figures.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">TeX</span><span class="fmt-badge">LaTeX</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-page-mcp-server/">
+        <h3>Aspose.Page</h3>
+        <p>Aspose.Page for Python via .NET enables conversion, creation, and manipulation of XPS, EPS, and PS documents, offering tools to convert these formats to PDF or raster images, create new XPS files, and merge multiple XPS documents.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">XPS</span><span class="fmt-badge">EPS</span><span class="fmt-badge">PS</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-cad-mcp-server/">
+        <h3>Aspose.CAD</h3>
+        <p>Aspose.CAD for Python via .NET is a conversion API that lets developers render and convert CAD and BIM drawings (DWG, DXF, DWF, DGN, IFC, STL, etc.) to raster and vector formats such as PDF, PNG, JPEG, BMP, TIFF, SVG, and more, without needing any CAD software. It supports exporting whole drawings, specific layouts, or selected layers, and provides basic drawing metadata.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">DWG</span><span class="fmt-badge">DXF</span><span class="fmt-badge">DWF</span><span class="fmt-badge">DGN</span><span class="fmt-badge">IFC</span><span class="fmt-badge">STL</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-3d-mcp-server/">
+        <h3>Aspose.3D</h3>
+        <p>Aspose.3D for Python via .NET is a feature‑rich API that lets developers read, write, manipulate and convert 3D file formats without needing any 3D modeling software. It supports many formats such as FBX, OBJ, STL, glTF, COLLADA and more, providing scene creation, mesh operations and rendering capabilities.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">FBX</span><span class="fmt-badge">OBJ</span><span class="fmt-badge">STL</span><span class="fmt-badge">GLTF</span><span class="fmt-badge">U3D</span><span class="fmt-badge">DAE</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-tasks-mcp-server/">
+        <h3>Aspose.Tasks</h3>
+        <p>Aspose.Tasks for Python via .NET enables programmatic creation, conversion, and inspection of Microsoft Project files such as MPP, MPT, and MPD.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">MPP</span><span class="fmt-badge">MPT</span><span class="fmt-badge">MPD</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-diagram-mcp-server/">
+        <h3>Aspose.Diagram</h3>
+        <p>Aspose.Diagram for Python via .NET is a Visio file manipulation library that lets you create, read, write and export Visio diagrams in formats such as VSDX, VDX, VSD, PDF and various images.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">VSD</span><span class="fmt-badge">VSDX</span><span class="fmt-badge">VSX</span><span class="fmt-badge">VTX</span>
+        </div>
+      </a>
+      
+      <a class="port-card" href="aspose-finance-mcp-server/">
+        <h3>Aspose.Finance</h3>
+        <p>Aspose.Finance for Python via .NET is a library that lets developers create, read, validate, and convert XBRL, iXBRL, and OFX financial documents, with support for exporting to Excel.</p>
+        <div class="port-formats">
+          <span class="fmt-badge">XBRL</span><span class="fmt-badge">iXBRL</span><span class="fmt-badge">OFX</span>
+        </div>
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+<section class="section" id="quick-start">
+  <div class="wrap">
+    <span class="eyebrow">Setup</span>
+    <h2>Quick start</h2>
+    <h3>1. Clone the repository</h3>
+    <pre>git clone https://github.com/aspose-total/Aspose.Total-for-Python-via-.NET-MCP-Server
+cd aspose-total-for-python-via-dotnet-mcp-server</pre>
+
+    <h3>2. Set up environments</h3>
+    <div class="code-tabs">
+      <div class="code-tab-labels" role="tablist">
+        <button role="tab" id="tab-setup-win" aria-controls="setup-win" aria-selected="true" tabindex="0">Windows</button>
+        <button role="tab" id="tab-setup-unix" aria-controls="setup-unix" aria-selected="false" tabindex="-1">macOS / Linux</button>
+      </div>
+      <div class="code-tab-panel" role="tabpanel" id="setup-win" aria-labelledby="tab-setup-win"><pre>servers\setup_all.bat</pre></div>
+      <div class="code-tab-panel" role="tabpanel" id="setup-unix" aria-labelledby="tab-setup-unix" hidden><pre>bash servers/setup_all.sh</pre></div>
+    </div>
+
+    <h3>3. Create a files directory</h3>
+    <p>All tools read from and write to one directory you control, e.g. <code>~/asposefiles</code>.</p>
+
+    <h3>4. Configure your AI client</h3>
+    <div class="code-tabs">
+      <div class="code-tab-labels" role="tablist">
+        <button role="tab" id="tab-cfg-claude" aria-controls="cfg-claude" aria-selected="true" tabindex="0">Claude Desktop</button>
+        <button role="tab" id="tab-cfg-vscode" aria-controls="cfg-vscode" aria-selected="false" tabindex="-1">VS Code</button>
+      </div>
+      <div class="code-tab-panel" role="tabpanel" id="cfg-claude" aria-labelledby="tab-cfg-claude"><pre>{
+  "mcpServers": {
+    "aspose-words": {
+      "command": "/path/to/servers/words/.venv/bin/python",
+      "args": ["/path/to/servers/words/server.py"],
+      "env": {
+        "ASPOSE_FILES_PATH": "/home/user/asposefiles",
+        "ASPOSE_LICENSE_FILE": "/home/user/asposefiles/Aspose.License.File.Name.lic"
+      }
+    }
+  }
+}</pre></div>
+      <div class="code-tab-panel" role="tabpanel" id="cfg-vscode" aria-labelledby="tab-cfg-vscode" hidden><pre>{
+  "servers": {
+    "aspose-words": {
+      "type": "stdio",
+      "command": "/path/to/servers/words/.venv/bin/python",
+      "args": ["/path/to/servers/words/server.py"],
+      "env": {
+        "ASPOSE_FILES_PATH": "/home/user/asposefiles",
+        "ASPOSE_LICENSE_FILE": "/home/user/asposefiles/Aspose.License.File.Name.lic"
+      }
+    }
+  }
+}</pre></div>
+    </div>
+    <p>Fully quit and restart your AI client after editing its config.</p>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="wrap">
+    <span class="eyebrow">FAQ</span>
+    <h2>Frequently asked</h2>
+    
+    <details class="faq-item">
+      <summary>Does this work with Claude Desktop?</summary>
+      <p>Yes. Add one entry per product to claude_desktop_config.json, set ASPOSE_FILES_PATH and (optionally) ASPOSE_LICENSE_FILE, then fully restart Claude Desktop.</p>
+    </details>
+    
+    <details class="faq-item">
+      <summary>Do I need a paid Aspose license?</summary>
+      <p>No — every server runs in free evaluation mode by default. Set ASPOSE_LICENSE_FILE to your .lic file to remove evaluation limits such as watermarks.</p>
+    </details>
+    
+    <details class="faq-item">
+      <summary>Can I run only some of the 19 servers?</summary>
+      <p>Yes. Pass specific product names to the setup script, e.g. setup_all.sh ocr words pdf cells slides, instead of setting up all of them.</p>
+    </details>
+    
+    <details class="faq-item">
+      <summary>Why does each product get its own virtual environment?</summary>
+      <p>Each Aspose package is isolated in its own virtual environment so version conflicts between products are impossible and each server can be updated independently.</p>
+    </details>
+    
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Repository</h3>
+        <a href="https://github.com/aspose-total/Aspose.Total-for-Python-via-.NET-MCP-Server">Source on GitHub</a>
+        <a href="https://github.com/aspose-total/Aspose.Total-for-Python-via-.NET-MCP-Server/issues">Report an issue</a>
+      </div>
+      <div class="footer-col">
+        <h3>Aspose</h3>
+        <a href="https://www.aspose.com/">aspose.com</a>
+        <a href="https://purchase.aspose.com/">Get a license</a>
+        <a href="https://products.aspose.com/">All Aspose products</a>
+      </div>
+      <div class="footer-col">
+        <h3>Products on this site</h3>
+        
+        <a href="./aspose-words-mcp-server/">Aspose.Words MCP Server</a>
+        
+        <a href="./aspose-pdf-mcp-server/">Aspose.PDF MCP Server</a>
+        
+        <a href="./aspose-cells-mcp-server/">Aspose.Cells MCP Server</a>
+        
+        <a href="./aspose-slides-mcp-server/">Aspose.Slides MCP Server</a>
+        
+        <a href="./#products">View all 19 →</a>
+      </div>
+    </div>
+    <p class="license-note">MCP server code: MIT License. The Aspose product it wraps remains commercially licensed by Aspose Pty Ltd.</p>
+    <div class="footer-bottom">
+      <div>
+        <span>© Aspose Pty Ltd 2001-2026. All Rights Reserved.</span>
+        <a href="https://about.aspose.com/legal/privacy-policy/">Privacy Policy</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://about.aspose.com/legal/terms-of-use/">Terms of Use</a>
+      </div>
+      <span>Generated from source repository, last built 2026-09-10T06:52:07Z (2d0d701)</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// v1.0.1: WAI-ARIA tabs pattern — click + arrow-key/Home/End navigation, with
+// roving tabindex so a tab group is one tab-stop, not one stop per tab.
+document.querySelectorAll('.code-tabs').forEach(function (group) {
+  var tabs = Array.prototype.slice.call(group.querySelectorAll('[role="tab"]'));
+  function select(tab) {
+    tabs.forEach(function (t) {
+      var selected = t === tab;
+      t.setAttribute('aria-selected', selected ? 'true' : 'false');
+      t.setAttribute('tabindex', selected ? '0' : '-1');
+      var panel = group.querySelector('#' + t.getAttribute('aria-controls'));
+      if (panel) { panel.hidden = !selected; }
+    });
+  }
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener('click', function () { select(tab); });
+    tab.addEventListener('keydown', function (e) {
+      var next = null;
+      if (e.key === 'ArrowRight') next = tabs[(i + 1) % tabs.length];
+      else if (e.key === 'ArrowLeft') next = tabs[(i - 1 + tabs.length) % tabs.length];
+      else if (e.key === 'Home') next = tabs[0];
+      else if (e.key === 'End') next = tabs[tabs.length - 1];
+      if (next) { e.preventDefault(); select(next); next.focus(); }
+    });
+  });
+});
+</script>
+</body>
+</html>

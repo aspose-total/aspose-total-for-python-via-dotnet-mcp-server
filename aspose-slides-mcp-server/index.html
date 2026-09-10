@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aspose.Slides MCP Server — Python via .NET | Aspose.Total MCP Server</title>
+<meta name="description" content="Aspose.Slides for Python via .NET is a library that enables Python applications to create, read, modify, merge, protect, and convert PowerPoint and OpenOffice presentations without requiring Microsoft PowerPoint.">
+<link rel="canonical" href="https://aspose-total.github.io/aspose-total-for-python-via-dotnet-mcp-server/aspose-slides-mcp-server/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aspose.Slides MCP Server">
+<meta property="og:description" content="Aspose.Slides for Python via .NET is a library that enables Python applications to create, read, modify, merge, protect, and convert PowerPoint and OpenOffice presentations without requiring Microsoft PowerPoint.">
+<meta property="og:url" content="https://aspose-total.github.io/aspose-total-for-python-via-dotnet-mcp-server/aspose-slides-mcp-server/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Aspose.Slides MCP Server",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Windows, macOS, Linux",
+  "description": "Aspose.Slides for Python via .NET is a library that enables Python applications to create, read, modify, merge, protect, and convert PowerPoint and OpenOffice presentations without requiring Microsoft PowerPoint.",
+  "url": "https://aspose-total.github.io/aspose-total-for-python-via-dotnet-mcp-server/aspose-slides-mcp-server/",
+  "isPartOf": { "@type": "SoftwareApplication", "name": "Aspose.Total MCP Server", "url": "https://aspose-total.github.io/aspose-total-for-python-via-dotnet-mcp-server/" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Aspose.Total MCP Server", "item": "https://aspose-total.github.io/aspose-total-for-python-via-dotnet-mcp-server/" },
+    { "@type": "ListItem", "position": 2, "name": "Aspose.Slides MCP Server", "item": "https://aspose-total.github.io/aspose-total-for-python-via-dotnet-mcp-server/aspose-slides-mcp-server/" }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="../assets/base.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../">
+      Aspose.Total MCP Server
+    </a>
+    <nav class="main-nav">
+      <a href="../#products">Products</a>
+      <a href="../#quick-start">Quick start</a>
+      <a href="../#faq">FAQ</a>
+      <a href="https://github.com/aspose-total/Aspose.Total-for-Python-via-.NET-MCP-Server" class="icon-link" aria-label="GitHub"><svg class="icon-github" viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content" tabindex="-1">
+<div class="wrap breadcrumb">
+  <a href="../">Aspose.Total MCP Server</a> / Aspose.Slides MCP Server
+</div>
+
+<section class="hero" style="padding-bottom:24px;">
+  <div class="wrap">
+    <span class="eyebrow">Python via .NET · server key: aspose-slides</span>
+    <h1 style="font-size:2.6rem;">Aspose.Slides <span class="accent">MCP Server</span></h1>
+    <div class="port-formats" style="margin-bottom:16px;">
+      <span class="fmt-badge">PPTX</span><span class="fmt-badge">PPT</span><span class="fmt-badge">ODP</span>
+    </div>
+    <p style="font-size:1.05rem; max-width:60ch;">Aspose.Slides for Python via .NET is a library that enables Python applications to create, read, modify, merge, protect, and convert PowerPoint and OpenOffice presentations without requiring Microsoft PowerPoint.</p>
+    <div class="hero-actions">
+      <a class="btn btn-accent" href="#setup">Configure this server</a>
+      <a class="btn btn-outline" href="https://products.aspose.com/slides/python-net/">Official Aspose.Slides page</a>
+      <a class="btn btn-outline" href="https://github.com/aspose-total/Aspose.Total-for-Python-via-.NET-MCP-Server/tree/main/servers/slides">View source folder</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="setup">
+  <div class="wrap">
+    <span class="eyebrow">Setup</span>
+    <h2>Configure Aspose.Slides in your AI client</h2>
+    <p>Add one entry to your MCP host config — only the <code>aspose-slides</code> key changes across clients.</p>
+    <div class="code-tabs">
+      <div class="code-tab-labels" role="tablist">
+        <button role="tab" id="tab-cfg-claude" aria-controls="cfg-claude" aria-selected="true" tabindex="0">Claude Desktop</button>
+        <button role="tab" id="tab-cfg-vscode" aria-controls="cfg-vscode" aria-selected="false" tabindex="-1">VS Code</button>
+        <button role="tab" id="tab-cfg-cursor" aria-controls="cfg-cursor" aria-selected="false" tabindex="-1">Cursor / Cline / Windsurf</button>
+      </div>
+      <div class="code-tab-panel" role="tabpanel" id="cfg-claude" aria-labelledby="tab-cfg-claude"><pre>{
+  "mcpServers": {
+    "aspose-slides": {
+      "command": "/path/to/servers/slides/.venv/bin/python",
+      "args": ["/path/to/servers/slides/server.py"],
+      "env": {
+        "ASPOSE_FILES_PATH": "/home/user/asposefiles",
+        "ASPOSE_LICENSE_FILE": "/home/user/asposefiles/Aspose.License.File.Name.lic"
+      }
+    }
+  }
+}</pre></div>
+      <div class="code-tab-panel" role="tabpanel" id="cfg-vscode" aria-labelledby="tab-cfg-vscode" hidden><pre>{
+  "servers": {
+    "aspose-slides": {
+      "type": "stdio",
+      "command": "/path/to/servers/slides/.venv/bin/python",
+      "args": ["/path/to/servers/slides/server.py"],
+      "env": {
+        "ASPOSE_FILES_PATH": "/home/user/asposefiles",
+        "ASPOSE_LICENSE_FILE": "/home/user/asposefiles/Aspose.License.File.Name.lic"
+      }
+    }
+  }
+}</pre></div>
+      <div class="code-tab-panel" role="tabpanel" id="cfg-cursor" aria-labelledby="tab-cfg-cursor" hidden><pre>// Same JSON shape as VS Code above — use the config path for your tool:
+// ~/.cursor/mcp.json · Cline settings · Windsurf mcp_config.json</pre></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">Try it</span>
+    <h2>Example prompts</h2>
+    <ul>
+      
+      <li>convert deck.pptx to pdf</li>
+      
+      <li>add a text box saying &#39;Quarterly Results&#39; to slide 2 of presentation.pptx</li>
+      
+      <li>list all pptx files in the directory</li>
+      
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="tools">
+  <div class="wrap">
+    <span class="eyebrow">Reference</span>
+    <h2>Available tools (23)</h2>
+    <p>Every tool this server exposes, straight from its own tool manifest.</p>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Tool</th><th>Description</th><th>Parameters</th></tr></thead>
+        <tbody>
+          
+          <tr>
+            <td><code>slides_list_files</code></td>
+            <td>Lists all files in the ASPOSE_FILES_PATH directory, optionally filtering by file extension.</td>
+            <td>
+              
+              <code>extension_filter</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: list all files in the directory using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: list all .pptx files in the directory using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_create_presentation</code></td>
+            <td>Creates a new PPTX presentation with an optional title and subtitle on the first slide.</td>
+            <td>
+              
+              <code>output_filename</code>: str (required), <code>title</code>: str | None, <code>subtitle</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: create a new presentation named new.pptx using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: create a new presentation named intro.pptx with title &#39;Annual Report&#39; and subtitle &#39;2023 Summary&#39; using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_convert_to_pdf</code></td>
+            <td>Converts a presentation to PDF format.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: convert presentation.pptx to pdf using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: convert slides.pptx to pdf and save as slides.pdf using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_convert_to_pptx</code></td>
+            <td>Converts a presentation (PPT, ODP, PPSX, etc.) to PPTX format.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: convert old.ppt to pptx using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: convert old.ppt to pptx and save as new.pptx using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_convert_to_html</code></td>
+            <td>Converts a presentation to HTML format.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: convert report.pptx to html using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: convert report.pptx to html and save as report.html using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_get_presentation_info</code></td>
+            <td>Returns slide count, title, author and slide dimensions from a presentation.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required)
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: get information from deck.pptx using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_extract_text</code></td>
+            <td>Extracts all text content from all slides in a presentation.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required)
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: extract all text from presentation.pptx using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_export_slides_as_images</code></td>
+            <td>Exports every slide as a separate JPEG or PNG image file.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>image_format</code>: str | None, <code>output_filename_prefix</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: export each slide of deck.pptx as images using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: export each slide of deck.pptx as png images with prefix slide_ using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_export_slide_as_image</code></td>
+            <td>Exports a single slide (0-based index) as a JPEG or PNG image.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>slide_index</code>: int (required), <code>image_format</code>: str | None, <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: export slide 0 of deck.pptx as an image using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: export slide 2 of deck.pptx as png and save as slide2.png using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_export_slide_as_svg</code></td>
+            <td>Exports a single slide (0-based index) as an SVG file.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>slide_index</code>: int (required), <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: export slide 1 of deck.pptx as svg using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: export slide 3 of deck.pptx as svg and save as slide3.svg using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_add_slide</code></td>
+            <td>Appends a new blank slide to the end of a presentation.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: add a new blank slide to presentation.pptx using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: add a new blank slide to presentation.pptx and save as updated.pptx using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_remove_slide</code></td>
+            <td>Removes a slide at the specified 0-based index.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>slide_index</code>: int (required), <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: remove slide 1 from deck.pptx using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: remove slide 2 from deck.pptx and save as cleaned.pptx using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_clone_slide</code></td>
+            <td>Clones an existing slide (0-based index) and appends the copy to the end.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>slide_index</code>: int (required), <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: clone slide 0 of deck.pptx using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: clone slide 0 of deck.pptx and save as cloned.pptx using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_add_text_shape</code></td>
+            <td>Adds a text box (rectangle auto-shape) to a slide.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>slide_index</code>: int (required), <code>text</code>: str (required), <code>x</code>: float | None, <code>y</code>: float | None, <code>width</code>: float | None, <code>height</code>: float | None, <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: add a text box with &#39;Hello World&#39; to slide 0 of deck.pptx using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: add a text box with &#39;Data Summary&#39; to slide 1 of deck.pptx at x=100 y=150 width=300 height=50 and save as labeled.pptx using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_add_image_to_slide</code></td>
+            <td>Inserts an image file onto a slide as a picture frame.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>image_filename</code>: str (required), <code>slide_index</code>: int (required), <code>x</code>: float | None, <code>y</code>: float | None, <code>width</code>: float | None, <code>height</code>: float | None, <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: add image picture.jpg to slide 0 of deck.pptx using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: add image logo.png to slide 2 of deck.pptx at x=50 y=80 width=200 height=100 and save as withlogo.pptx using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_add_table_to_slide</code></td>
+            <td>Inserts a table onto a slide with the specified number of rows and columns.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>slide_index</code>: int (required), <code>rows</code>: int (required), <code>columns</code>: int (required), <code>x</code>: float | None, <code>y</code>: float | None, <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: add a table with 3 rows and 4 columns to slide 0 of deck.pptx using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: add a table with 5 rows and 2 columns to slide 1 of deck.pptx at x=100 y=200 and save as tableed.pptx using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_add_chart_to_slide</code></td>
+            <td>Inserts a chart onto a slide with an optional title.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>slide_index</code>: int (required), <code>chart_type</code>: str | None, <code>title</code>: str | None, <code>x</code>: float | None, <code>y</code>: float | None, <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: add a chart to slide 0 of deck.pptx using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: add a bar chart with title &#39;Sales&#39; to slide 1 of deck.pptx at x=100 y=150 and save as charted.pptx using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_set_slide_transition</code></td>
+            <td>Sets a transition effect on a slide (e.g. FADE, PUSH, WIPE, ZOOM, NONE).</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>slide_index</code>: int (required), <code>transition_type</code>: str (required), <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: set transition fade on slide 0 of deck.pptx using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: set transition push on slide 2 of deck.pptx and save as transitioned.pptx using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_merge_presentations</code></td>
+            <td>Merges a second presentation into a base presentation by cloning all its slides.</td>
+            <td>
+              
+              <code>base_filename</code>: str (required), <code>merge_filename</code>: str (required), <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: merge supplement.pptx into main.pptx using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: merge extra.pptx into base.pptx and save as combined.pptx using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_protect_presentation</code></td>
+            <td>Sets an open password on a presentation.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>password</code>: str (required), <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: protect presentation.pptx with password secret using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: protect presentation.pptx with password secret and save as protected.pptx using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_unprotect_presentation</code></td>
+            <td>Removes the open password from a password-protected presentation.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>password</code>: str (required), <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: remove password secret from locked.pptx using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: remove password secret from locked.pptx and save as unlocked.pptx using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_find_and_replace_text</code></td>
+            <td>Replaces all occurrences of a text string across all slides.</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>find_text</code>: str (required), <code>replace_text</code>: str (required), <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: replace &#39;Q1&#39; with &#39;Q2&#39; in report.pptx using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: replace &#39;Draft&#39; with &#39;Final&#39; in draft.pptx and save as final.pptx using aspose slides mcp</td></tr>
+          
+          
+          <tr>
+            <td><code>slides_reorder_slide</code></td>
+            <td>Moves a slide from one position to another (both indices are 0-based).</td>
+            <td>
+              
+              <code>input_filename</code>: str (required), <code>from_index</code>: int (required), <code>to_index</code>: int (required), <code>output_filename</code>: str | None
+              
+            </td>
+          </tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: move slide 2 to position 0 in deck.pptx using aspose slides mcp</td></tr>
+          
+          <tr class="tool-prompt-row"><td colspan="3">prompt: move slide 3 to position 1 in deck.pptx and save as reordered.pptx using aspose slides mcp</td></tr>
+          
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">Troubleshooting</span>
+    <h2>Common issues</h2>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Symptom</th><th>Fix</th></tr></thead>
+        <tbody>
+          
+          <tr><td>tool returns a file‑not‑found error when a full file path is supplied</td><td>provide only the bare filename (e.g., &#34;report.pptx&#34;) and ensure the file resides in the ASPOSE_FILES_PATH directory</td></tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">Explore more</span>
+    <h2>Other MCP servers on this site</h2>
+    <div class="crosslinks">
+      
+      <a href="../aspose-words-mcp-server/">Aspose.Words</a>
+      
+      <a href="../aspose-pdf-mcp-server/">Aspose.PDF</a>
+      
+      <a href="../aspose-cells-mcp-server/">Aspose.Cells</a>
+      
+      <a href="../aspose-email-mcp-server/">Aspose.Email</a>
+      
+      <a href="../aspose-ocr-mcp-server/">Aspose.OCR</a>
+      
+      <a href="../aspose-imaging-mcp-server/">Aspose.Imaging</a>
+      
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Repository</h3>
+        <a href="https://github.com/aspose-total/Aspose.Total-for-Python-via-.NET-MCP-Server">Source on GitHub</a>
+        <a href="https://github.com/aspose-total/Aspose.Total-for-Python-via-.NET-MCP-Server/issues">Report an issue</a>
+      </div>
+      <div class="footer-col">
+        <h3>Aspose</h3>
+        <a href="https://www.aspose.com/">aspose.com</a>
+        <a href="https://purchase.aspose.com/">Get a license</a>
+        <a href="https://products.aspose.com/">All Aspose products</a>
+      </div>
+      <div class="footer-col">
+        <h3>Products on this site</h3>
+        
+        <a href="../aspose-words-mcp-server/">Aspose.Words MCP Server</a>
+        
+        <a href="../aspose-pdf-mcp-server/">Aspose.PDF MCP Server</a>
+        
+        <a href="../aspose-cells-mcp-server/">Aspose.Cells MCP Server</a>
+        
+        <a href="../aspose-slides-mcp-server/">Aspose.Slides MCP Server</a>
+        
+        <a href="../#products">View all 19 →</a>
+      </div>
+    </div>
+    <p class="license-note">MCP server code: MIT License. The Aspose product it wraps remains commercially licensed by Aspose Pty Ltd.</p>
+    <div class="footer-bottom">
+      <div>
+        <span>© Aspose Pty Ltd 2001-2026. All Rights Reserved.</span>
+        <a href="https://about.aspose.com/legal/privacy-policy/">Privacy Policy</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://about.aspose.com/legal/terms-of-use/">Terms of Use</a>
+      </div>
+      <span>Generated from source repository, last built 2026-09-10T06:52:07Z (2d0d701)</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// v1.0.1: WAI-ARIA tabs pattern — click + arrow-key/Home/End navigation, with
+// roving tabindex so a tab group is one tab-stop, not one stop per tab.
+document.querySelectorAll('.code-tabs').forEach(function (group) {
+  var tabs = Array.prototype.slice.call(group.querySelectorAll('[role="tab"]'));
+  function select(tab) {
+    tabs.forEach(function (t) {
+      var selected = t === tab;
+      t.setAttribute('aria-selected', selected ? 'true' : 'false');
+      t.setAttribute('tabindex', selected ? '0' : '-1');
+      var panel = group.querySelector('#' + t.getAttribute('aria-controls'));
+      if (panel) { panel.hidden = !selected; }
+    });
+  }
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener('click', function () { select(tab); });
+    tab.addEventListener('keydown', function (e) {
+      var next = null;
+      if (e.key === 'ArrowRight') next = tabs[(i + 1) % tabs.length];
+      else if (e.key === 'ArrowLeft') next = tabs[(i - 1 + tabs.length) % tabs.length];
+      else if (e.key === 'Home') next = tabs[0];
+      else if (e.key === 'End') next = tabs[tabs.length - 1];
+      if (next) { e.preventDefault(); select(next); next.focus(); }
+    });
+  });
+});
+</script>
+</body>
+</html>
